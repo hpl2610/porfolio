@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+<style>
+
+
+  
+body,h1,h2 {font-family: 'Quicksand', sans-serif;;}
+* {box-sizing: border-box;}
+
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+
+#grad1 {
+  height: 800px;
+  background-color: #E9967A; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#E9967A, #FFF0F5);
+}
+
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  float: right;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFF0F5;
+  color: black;
+}
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/*fotter*/
+ 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#E9967A;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body >
+
+<script >
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+<div class="content">
+<!-- navbar-->
+<div>
+  <div id="grad1">
+  <div class="container">
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+     <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-x1-12 col-lg-10 col-md-10 col-sm-10">
+          <div class="hero_caption">
+       <h1 class=" font-weight-bold" style="font-size: 900% ; color: #FFFAF0" >Hi, I'm Dieu Ly</h1>
+        <p style=" font-size: 300%;color: #FFFAF0"> And I'm an Artist </p>
+        <table border="0" cellpadding="0" cellspacing="0" style="height: 150px;">
+          <tr>
+            <td class="middle"></td>
+          </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+ <!-- section1-->
+<br>
+<div class="container" id="about">
+<div class="row align-items-center">
+<div class="col-xl-6 col-lg-6 col-md-10">
+<div class="about-caption mb-50">
+
+<div class="section-tittle mb-35">
+<h2 style="font-weight: bold; font-size: 300%; color: #E9967A">About me</h2>
+</div>
+<p>My name is Dieu Ly, I am a final year student majoring in graphic design at FPT University. Currently, I am also the head of design department of FEC-FPT English Club at FPT University. I have 2 years experience as a freelancer and intern as a 2D artist at Urah Network.</p>
+
+<p>I like to be creative and have good hand-drawing ability. I have the ability to communicate, work well in groups and can adapt to the pressure of work. I look forward to working with you to create the
+most unique and quality products. </p>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="about-img">
+<img src="D:\Desktop\web 2\assigment3\image\47578643_775183696153981_6009031934301175808_o.jpg" alt="" width="500">
+</div>
+</div>
+</div>
+</div>
+ <hr>
+ <br>
+    
+    <!-- port-->
+
+
+    <div class="gallery-area section-padding40" id="portfolio">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="section-tittle mb-60">
+<h2 style="color: #E9967A;font-weight: bold;font-size: 300%">Portfolio</h2>
+</div>
+</div>
+</div>
+<br>
+<!-- Photo grid -->
+  <div class="w3-row ">
+    <div class="w3-quarter">
+      <img src="D:\Desktop\web 2\assigment3\image\23-7.jpg" style="width:100%" onclick="onClick(this)" alt="Porttrait">
+      <br> <br>
+      <img src="D:\Desktop\web 2\assigment3\image\snowwithe.png" style="width:100%" onclick="onClick(this)" alt="Porttrait">
+   </div>
+    
+    <div class="w3-quarter">
+      <img src="D:\Desktop\web 2\assigment3\image\2.png" style="width:100%" onclick="onClick(this)" alt="fanart">
+      <br><br>
+      <img src="D:\Desktop\web 2\assigment3\image\art2.png" style="width:100%" onclick="onClick(this)" alt="fanart">
+      
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="D:\Desktop\web 2\assigment3\image\amane.png" style="width:100%" onclick="onClick(this)" alt="fanart">
+      <br><br>
+      <img src="D:\Desktop\web 2\assigment3\image\oc1.jpg" style="width:100%" onclick="onClick(this)" alt="fanart">
+      
+    </div>
+
+    <div class="w3-quarter">
+      <img src="D:\Desktop\web 2\assigment3\image\100719.jpg" style="width:100%" onclick="onClick(this)" alt="Porttrait">
+      <br><br>
+      <img src="D:\Desktop\web 2\assigment3\image\250220ahdieyfaljeif.png" style="width:100%" onclick="onClick(this)" alt="Porttrait">
+    </div>
+  </div>
+
+  
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<br>
+ <hr>
+
+ <!-- Contact section -->
+
+<br>
+<div class="container" id="contact">
+<div class="row align-items-center">
+<div class="col-xl-6 col-lg-6 col-md-10">
+<div class="about-caption mb-50">
+
+<div class="section-tittle mb-35">
+<h2 style="font-weight: bold; font-size: 300%; color: #E9967A">Do you want to know more about me? </h2>
+</div>
+<div class="w3-container  w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h2 class="w3-center"><b>Contact Me</b></h2>
+      <p>Do you want me to draw you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="about-img">
+<img src="D:\Desktop\web 2\assigment3\image\alice.png" alt="" width="100%">
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<br>
+<br>
+
+
+</div>
+
+<!-- footer -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" style="margin-top:128px;" > 
+  <a href="https://www.facebook.com/shmily1511/" style="color: #CD5C5C"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/hpl.me/" style="color: #CD5C5C"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.behance.net/lyhong" style="color: #CD5C5C"><i class="fa fa-behance w3-hover-opacity"></i></a>
+  <p class="w3-medium"> Coppy right 2021/Powered by hpl</p>
+</footer>
+</body>
+</html>
